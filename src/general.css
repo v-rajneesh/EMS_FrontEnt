@@ -1,0 +1,43 @@
+body {
+  background-image: url("./images/homepage.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0 10px;
+  width: 940px;
+}
+
+.table-wrapper {
+  width: 540px;
+}
+
+.order-error {
+  font-weight: 800;
+  color: red;
+}
+
+.filter {
+  width: 900px;
+  height: 120px;
+  margin-top: 0.8rem;
+  margin-left: 1rem;
+  background-color: rgb(148, 167, 148, 0.5);
+}
+
+.order-tile span {
+  padding-top: 0.2px;
+}
+
+.order-tile {
+  height: auto;
+  margin-top: 20px;
+  background-color: rgba(168, 124, 124, 0.5);
+  width: 70rem;
+  margin-left: 3rem;
+  padding: 10px;
+}
