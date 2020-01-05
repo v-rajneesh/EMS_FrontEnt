@@ -17,3 +17,6 @@ export const getOrderInfoById = id =>
 
 export const getOrderById = id =>
   axios.get("http://localhost:8080/v1/getOrderById/" + id);
+
+export const getProductDetail = p_id =>
+  axios.get("http://localhost:8080/v1/getProductDetails/" + p_id);

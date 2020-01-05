@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useParams, Redirect } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import { getOrderInfoById, getOrderById } from "../services/EmployeeService";
+import { Button } from "react-bootstrap";
+import ProductDetail from "../modals/ProductDetails";
 //
 //
 //
@@ -8,6 +10,7 @@ import { getOrderInfoById, getOrderById } from "../services/EmployeeService";
 //
 //
 //
+
 const OrderDetails = props => {
   const item = props.history.location.state;
   const { id } = useParams();
@@ -66,6 +69,7 @@ const OrderTiles = ({ order }) => {
       <span>Unit Price:{order.unitPrice}</span> <br />
       <span>Total Price:{order.unitPrice * order.quantity}</span>
       <br />
+      <ProductDetail productID={order.productID} />
     </div>
   );
 };
